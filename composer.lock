@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589cc0f65c3aaa7d4e9024d545bc1974",
+    "content-hash": "bf19dd2bd768e86f7f4c69448b9c3d4e",
     "packages": [
         {
             "name": "brick/math",
@@ -3117,6 +3117,59 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "serganbus/credit-calculator",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/Serganbus/credits-calculator.git",
+                "reference": "f97cba84e15d423eb3aa5c1f33b865b957854d5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/Serganbus%2Fcredits-calculator/repository/archive.zip?sha=f97cba84e15d423eb3aa5c1f33b865b957854d5c",
+                "reference": "f97cba84e15d423eb3aa5c1f33b865b957854d5c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Serganbus\\Money\\Credits\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivanov Sergey",
+                    "email": "sivanovkz@gmail.com"
+                }
+            ],
+            "description": "Калькулятор для расчета графика погашения кредита, используя аннуитетный/дифференцированный методы погашения. Можно указать частичное досрочное погашение, а также учесть едииноразовую/периодическую комиссии. Пакет легко расширяем собственными алгоритмами расчета графика погашений.",
+            "keywords": [
+                "annuity payment",
+                "calculator",
+                "credit",
+                "differential payment",
+                "loan",
+                "repayment schedule"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/20006967/issues"
+            },
+            "time": "2020-12-18T14:34:09+00:00"
         },
         {
             "name": "symfony/clock",
@@ -7835,12 +7888,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
